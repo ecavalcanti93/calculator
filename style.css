@@ -1,0 +1,78 @@
+body{
+    background-color: whitesmoke;
+}
+
+table { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+  
+input[type="button"] { 
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: #0044FF; 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #0044FF; 
+} 
+
+input[type="button"]:hover{
+    background-color: rgb(25, 25, 92); 
+    border: 2px solid rgb(25, 25, 92); 
+}
+
+input[value="="] {
+    background-color: rgb(255, 123, 0); 
+    border: 2px solid rgb(255, 123, 0); 
+}
+
+input[value="="]:hover {
+    background-color: white; 
+    border: 2px solid rgb(255, 123, 0); 
+    color: rgb(255, 123, 0);
+}
+  
+input[type="text"] { 
+    padding: 20px 30px; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    border: 2px solid black; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 80%;
+        top: 30%;
+    }
+
+    input[type="button"], input[type="text"] {
+        font-size: 18px;
+        padding: 15px 30px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    table {
+        width: 90%;
+        top: 20%;
+    }
+
+    input[type="button"], input[type="text"] {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
